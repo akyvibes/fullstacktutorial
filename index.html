@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AKY - Portfolio</title>
-    <link rel="stylesheet" href="./STYLE.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>HTML5 Demo</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <h2 class="logo">KY</h2>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
+  <!-- Semantic Structure -->
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
 
-    
-        <section id="about">
-            <h1>About Me</h1>
-            <p>I’m AANCHAL , a beginner web developer who loves creating simple and clean websites.</p>
-        </section>
+  <section id="hero">
+    <!-- Video Background -->
+    <video autoplay muted loop id="bg-video">
+      <source src="your-video.mp4" type="video/mp4">
+    </video>
 
-        
-        <section id="projects">
-            <h1>Projects</h1>
+    <h2>Welcome to My Portfolio</h2>
+  </section>
 
-            <div class="project">
-                <h2>Portfolio</h2>
-                <p>A simple website that shows my work.</p>
-            </div>
+  <section>
+    <h3>Contact Form</h3>
+    <form>
+      <label>Name:</label>
+      <input type="text" required>
 
-            <div class="project">
-                <h2>To-Do App</h2>
-                <p>A small app to add and manage tasks.</p>
-            </div>
-        </section>
+      <label>Email:</label>
+      <input type="email" required>
 
-        <!-- CONTACT -->
-        <section id="contact">
-            <h1>Contact</h1>
-            <p>Email: ky@example.com</p>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2025 KY</p>
-    </footer>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+<script src="js/script.js"></script>
 </body>
 </html>
